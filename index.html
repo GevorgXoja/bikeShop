@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <!-- CSS only -->
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans&family=Montserrat:wght@400;500;700&family=Open+Sans&display=swap" rel="stylesheet">
+
+
+    <!-- JavaScript Bundle with Popper -->
+    <script src="js/main.js"></script>
+</head>
+<body>
+<div class="contayner">
+    <div class="bike-type title-hidden">
+        <div>
+            <a href="#" class="bike-about-hold" id="0"  onclick="removingContent('navigator', 0)">Горный велосипед</a>
+        </div>
+        <div>
+            <a href="#" class="bike-about-chang" id="1" onclick="removingContent('women-bike', 1)">Женский велосипед</a>
+        </div>
+    </div>
+    <div class="bike-type-mobile">
+        <div style="padding: 22px;" onclick="removingContent('navigator', 0, 'vector-0')">
+            <a href="#" style="margin-right: 77px">Горный велосипед</a>
+            <img src="images/Vector-up.svg" alt="" class="no-active" id="vector-0">
+        </div>
+    </div>
+    <div class="content" id="navigator">
+        <div class="content-about">
+            <img src="images/stels-navigator-bike.svg" alt="" style="margin-left: -60px" class="for-desktop ">
+            <img src="images/stels-navigator-bike-mobile.svg" alt="" class="for-mobile">
+            <div class="bike-about">
+                <h1>Велосипед STELS Navigator 510 HD 26 2022</h1>
+                <p>Данный велосипед с колесами 26 дюймов хорошо подходит высоким подросткам. Прогиб рамы и небольшой размер
+                    рамы расчитан на рост от 135 до 165 см.</p>
+                <p style="margin-top: 16px">Суммарный вес велосипеда был снижен до 16,9 кг, так как рама была
+                    изготовлена с учетом использования велосипеда подростками.</p>
+            </div>
+        </div>
+        <div class="characteristics">
+            <h3>Характеристики</h3>
+            <ol>
+                <li>Двойной обод</li>
+                <li>Алюминиевый сплав</li>
+                <li>Колеса диаметром 26 дюймов</li>
+                <li>Покрышки 26х1,95"</li>
+            </ol>
+        </div>
+        <div class="add-characteristics">
+            <h3>Добавить характеристику</h3>
+            <label>
+                <input placeholder="Алюминиевый сплав">
+            </label>
+            <a href="#" class="add-characteristics-btn">Добавить</a>
+        </div>
+        <div class="selection">
+            <a href="#" class="add-characteristics-btn" >Окей</a>
+            <a href="#" class="cancel-btn">Отмена</a>
+        </div>
+    </div>
+
+    <div class="bike-type-mobile">
+        <div style="padding: 22px;" onclick="removingContent('women-bike', 1 , 'vector-1')">
+            <a href="#" style="margin-right: 77px">Горный велосипед</a>
+            <img src="images/Vector-up.svg" alt="" class="active" id="vector-1">
+        </div>
+    </div>
+    <div class="content" id="women-bike" style="display: none">
+        <div class="content-about">
+            <img src="images/schwinn-traveler-women-bick.svg" alt="" style="margin-left: -60px" class="for-desktop ">
+            <img src="images/schwinn-traveler-women-bick-mobile.svg" alt="" class="for-mobile">
+            <div class="bike-about">
+                <h1>Велосипед SCHWINN Traveler women 2022</h1>
+                <p>Женский велосипед со стальной рамой Classic step-true lightweight позволяет девушкам без
+                    проблем его перемещать.</p>
+                <p style="margin-top: 16px">На данном велосипеде имеется 7 скоростей с переключателями от
+                    Shimano, а жесткая вилка обеспечивает отличную управляемость. Подходит для катания по
+                    асфальтированным поверхностям.</p>
+            </div>
+        </div>
+        <div class="characteristics bike-icons" >
+            <h3>Характеристики</h3>
+            <ul class="bike-icons">
+                <li>Стальная рама</li>
+                <li>Колеса диаметром 24 дюймов</li>
+                <li>Жесткая вилка</li>
+                <li>7 скоростей</li>
+            </ul>
+        </div>
+        <div class="add-characteristics">
+            <h3>Добавить характеристику</h3>
+            <label>
+                <input placeholder="Алюминиевый сплав">
+            </label>
+            <a href="#" class="add-characteristics-btn">Добавить</a>
+        </div>
+        <div class="selection">
+            <a href="#" style="margin-right: 58px" class="add-characteristics-btn" >Окей</a>
+            <a href="#" class="cancel-btn">Отмена</a>
+        </div>
+    </div>
+</div>
+</body>
+</html>

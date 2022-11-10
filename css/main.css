@@ -1,0 +1,315 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    background-color: #F4F4F4;
+}
+
+.contayner {
+    width: 100%;
+    max-width: 1716px;
+    margin: 0 auto;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 26px;
+    line-height: 39px;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 22px;
+    line-height: 33px;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 500;
+}
+
+p {
+    margin-bottom: 0;
+}
+
+ul, li {
+    line-height: 36px;
+    margin-left: 23px;
+}
+
+/*li {*/
+/*    list-style-type: none;*/
+/*}*/
+
+ul {
+    margin-left: 0; /* Отступ слева в браузере IE и Opera */
+    padding-left: 0; /* Отступ слева в браузере Firefox, Safari, Chrome */
+}
+
+ul li {
+    margin-right: 203px;
+}
+
+.bike-icons{
+    list-style-image: url(../images/back-vector.svg);
+    /*line-height: 36px;*/
+    /*margin-left: 23px;*/
+}
+
+a {
+    text-decoration: none !important;
+}
+
+.add-characteristics-btn {
+    margin-right: 58px;
+}
+
+.add-characteristics-btn:hover {
+    background-color: rgba(44, 26, 154, 1);
+}
+
+.add-characteristics-btn:active {
+    background-color: rgba(31, 19, 104, 1);
+}
+
+.bike-type {
+    margin-top: 101px;
+    display: flex;
+}
+
+.bike-about-hold {
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #FFF;
+    color: rgba(57, 34, 197, 1);
+    padding: 28px 55px;
+    border-radius: 20px 20px 0 0;
+}
+
+.bike-about-chang {
+    font-weight: 500;
+    font-size: 22px;
+    background-color: #D9D9D9;;
+    color: rgba(12, 12, 12, 1);
+    padding: 28px 55px;
+    border-radius: 20px 20px 0 0;
+}
+
+.bike-type-mobile {
+    display: none;
+}
+
+.content {
+    margin-top: 26px;
+    background: #FFFFFF;
+    padding: 40px 60px;
+    width: 845px;
+    height: 708px;
+    border-radius: 0 20px 20px 20px;
+}
+
+.content-about {
+    border-bottom: 1px solid rgba(217, 217, 217, 1);
+    display: flex;
+    padding-bottom: 40px
+}
+
+.for-mobile {
+    display: none;
+}
+
+
+.bike-about{
+    margin-left: 71px;
+}
+
+.bike-about h1 {
+    max-width: 390px;
+    margin-bottom: 20px;
+}
+
+.characteristics ul {
+    margin-top: 20px;
+    /*margin-right: 226px;*/
+    display: flex;
+    /*justify-content: space-between;*/
+    flex-wrap: wrap;
+}
+
+.characteristics h3{
+    margin-top: 40px;
+}
+
+.characteristics ol{
+    /*margin-top: 20px;*/
+    /*display: flex;*/
+    /*justify-content: space-between;*/
+    /*flex-wrap: wrap;*/
+}
+
+ol li {
+    /*margin-right: 159px;*/
+}
+
+.add-characteristics h3 {
+    margin: 40px 0 20px;
+}
+
+.add-characteristics input {
+    width: 351px;
+    border: 1px solid #D9D9D9;
+    border-radius: 16px;
+    padding: 14px 16px;
+    margin-right: 48px;
+}
+
+input:focus {
+    outline: none !important;
+    border-color: rgba(57, 34, 197, 1);
+}
+
+.add-characteristics-btn{
+    color: #fff;
+    background: rgba(57, 34, 197, 1);
+    border-radius: 16px;
+    padding: 14px 24px;
+}
+
+
+.selection{
+    margin: 40px 0;
+    background: #FFFFFF;
+    box-shadow: 0 10px 40px rgba(12, 12, 12, 0.1);
+    border-radius: 20px;
+    padding: 30px;
+}
+
+.cancel-btn {
+    color: rgba(12, 12, 12, 1);
+}
+.cancel-btn:hover {
+    color: rgba(44, 26, 154, 1);
+}
+.cancel-btn:active {
+    color: rgba(31, 19, 104, 1);
+}
+
+#women-bike {
+    display: none;
+}
+
+.no-active {
+    transform: rotate(0deg);
+}
+
+.active {
+    transform: rotate(180deg);
+}
+
+ol {
+    margin-top: 20px;
+    column-count: 2;
+
+}
+@media only screen and (max-width: 500px){
+    .for-desktop {
+        display: none;
+    }
+
+    .for-mobile{
+        display: block;
+    }
+
+    .content {
+        margin: 0 20px 0;
+        background: #FFFFFF;
+        padding: 30px 20px;
+        width: 294px;
+        height: 1196px;
+        border-radius: 0 0 20px 20px;
+    }
+
+    .content-about {
+        border-bottom: 1px solid rgba(217, 217, 217, 1);
+        display: flex;
+        padding-bottom: 40px;
+        flex-wrap: wrap;
+        width: 295px;
+    }
+
+    .bike-about {
+        margin-left: 0;
+    }
+
+    .bike-about h1 {
+        margin-top: 20px;
+    }
+
+    ol li {
+         margin-right: 15px;
+    }
+
+    .add-characteristics input {
+        width: 275px;
+        border: 1px solid #D9D9D9;
+        border-radius: 16px;
+        padding: 14px 16px;
+        margin-right: 0;
+        margin-bottom: 30px;
+    }
+
+    .add-characteristics .add-characteristics-btn {
+        color: #fff;
+        background: rgba(57, 34, 197, 1);
+        border-radius: 16px;
+        padding: 14px 115px;
+        margin-right: 0;
+    }
+
+    .characteristics ol {
+        display: flex;
+        flex-direction: column;
+    }
+
+    #women-bike {
+        display: block;
+    }
+
+    .title-hidden{
+        display: none;
+    }
+
+    .bike-type-mobile{
+        display: block;
+        background-color: #fff;
+        border-radius: 20px 20px 0 0;
+        width: 335px;
+        height: 73px;
+        margin: 20px 20px 0;
+    }
+
+    .characteristics ul {
+        margin-top: 20px;
+        margin-right: 1px;
+        display: block;
+    }
+
+    ul li {
+        margin-right: 1px;
+    }
+}
